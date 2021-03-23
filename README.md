@@ -1,2 +1,2 @@
 # Developing-Data-Products-Coursera
-this is the clone of the Developing Data Products Coursera class repository 
+this is my repository for the Developing Data Products Coursera class 
