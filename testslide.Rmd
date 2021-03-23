@@ -1,0 +1,32 @@
+---
+title: "Potential Sampling Sites"
+author: "Amanda Nelson"
+date: "3/23/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Planned Runoff Sampling Sites
+
+```{r library, warning=FALSE}
+library(leaflet)
+```
+
+```{r map, echo=FALSE}
+SiteLatLong <-data.frame(
+  lat = c(33.377278,33.78917, 33.418953), 
+  lng = c(-90.672806, -90.51194, -90.899864))
+
+Sitelabels <-c("TWR", "Mason", "21 Guns")
+
+SiteLatLong %>%
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(popup = Sitelabels)
+
+```
+
+
